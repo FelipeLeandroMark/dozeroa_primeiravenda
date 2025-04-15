@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do Zero à Primeira Venda!</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #e8f5e9; margin: 0; padding: 0; color: #2e7d32; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; background: #ffffff; border-radius: 10px; box-shadow: 0 0 25px rgba(0,0,0,0.15); animation: fadeIn 1s ease; }
+    h1, h2, h3 { color: #2e7d32; }
+    .button { display: inline-block; background: #43a047; color: #fff; padding: 18px 28px; border-radius: 10px; text-decoration: none; font-weight: bold; margin: 20px 0; transition: background 0.3s ease, transform 0.2s ease; animation: pulse 2s infinite; }
+    .button:hover { background: #388e3c; transform: scale(1.05); }
+    .price { font-size: 28px; color: #c62828; font-weight: bold; margin-top: 20px; animation: bounce 1s infinite alternate; text-align: center; position: relative; }
+    .badge { position: absolute; top: -20px; right: -20px; background: #ffca28; color: #c62828; padding: 8px 14px; border-radius: 50px; font-size: 14px; font-weight: bold; animation: pulse 1.5s infinite; }
+    .bonus, .guarantee, .testimonials, .faq { margin: 30px 0; }
+    .testimonial { background: #c8e6c9; padding: 18px; border-radius: 10px; margin-bottom: 20px; color: #1b5e20; font-weight: bold; }
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 10px; }
+    p strong { font-size: 18px; }
+    .banner { background: #66bb6a; color: #ffffff; text-align: center; padding: 20px 10px; border-radius: 10px; font-size: 22px; font-weight: bold; margin-bottom: 20px; animation: slideIn 1s ease; }
+    .timer { background: #c62828; color: #fff; text-align: center; padding: 15px 10px; border-radius: 10px; font-size: 20px; font-weight: bold; margin: 20px 0; animation: pulse 1s infinite; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(67,160,71, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(67,160,71, 0); } 100% { box-shadow: 0 0 0 0 rgba(67,160,71, 0); } }
+    @keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+    @keyframes slideIn { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  </style>
+  <script>
+    function startTimer(duration, display) {
+      var timer = duration, minutes, seconds;
+      setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (--timer < 0) {
+          timer = 0;
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      var fiveMinutes = 60 * 5, // 5 minutos
+          display = document.querySelector('#time');
+      startTimer(fiveMinutes, display);
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="banner">📈 Faça Sua Primeira Venda Online em Tempo Recorde!</div>
+    <h1>Do Zero à Primeira Venda!</h1>
+    <p><strong>Descubra Como Fazer Sua Primeira Venda Online Mesmo Que Você Seja Totalmente Iniciante!</strong></p>
+    <div class="timer">Oferta válida por: <span id="time">05:00</span></div>
+    <a class="button" href="https://pay.kiwify.com.br/BCm4CRA" target="_blank">QUERO MINHA PRIMEIRA VENDA AGORA!</a>
+
+    <h2>O Que Você Vai Aprender</h2>
+    <ul>
+      <li>Como escolher um produto ou serviço para começar</li>
+      <li>Como criar uma oferta irresistível</li>
+      <li>Onde encontrar seus primeiros clientes</li>
+      <li>Estratégias simples para gerar suas primeiras vendas</li>
+      <li>Como usar as redes sociais e ferramentas gratuitas a seu favor</li>
+      <li>Como organizar seu negócio digital para crescer a partir da primeira venda</li>
+    </ul>
+
+    <h2>Para Quem é Este Ebook?</h2>
+    <ul>
+      <li>Para quem quer começar a ganhar dinheiro pela internet</li>
+      <li>Para quem já tentou vender, mas não conseguiu resultados</li>
+      <li>Para quem não sabe como atrair clientes online</li>
+      <li>Para quem quer criar uma renda extra de verdade</li>
+    </ul>
+
+    <div class="testimonials">
+      <h2>Depoimentos</h2>
+      <div class="testimonial">
+        <p>⭐️⭐️⭐️⭐️⭐️<br>
+        "Eu já tinha tentado vender pela internet e nunca consegui. Com o Ebook, consegui fazer minha primeira venda em menos de 7 dias!"<br>
+        <strong>— Marina S.</strong></p>
+      </div>
+      <div class="testimonial">
+        <p>⭐️⭐️⭐️⭐️⭐️<br>
+        "Simples, direto e objetivo! Muito bom para quem está começando."<br>
+        <strong>— Thiago R.</strong></p>
+      </div>
+    </div>
+
+    <div class="bonus">
+      <h2>Bônus Exclusivo</h2>
+      <ul>
+        <li>🎁 Checklist: Primeiros Passos Para Vender Online</li>
+        <li>🎁 Modelo de Mensagem Para Abordar Clientes</li>
+      </ul>
+    </div>
+
+    <div class="price">
+      <div class="badge">50% OFF</div>
+      De: R$ 79,90<br>
+      Por apenas: R$ 39,90
+    </div>
+
+    <a class="button" href="https://pay.kiwify.com.br/BCm4CRA" target="_blank">BAIXAR AGORA</a>
+
+    <div class="guarantee">
+      <h2>Garantia</h2>
+      <p>Você não corre riscos! Se em até 7 dias você não ficar satisfeito(a) com o Ebook, devolvemos seu dinheiro. Simples assim.</p>
+    </div>
+  </div>
+</body>
+</html>
